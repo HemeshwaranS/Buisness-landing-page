@@ -54,17 +54,20 @@ nav button {
     justify-content: space-between;
     align-items: center;
 }
-.content-card{
+
+.content-card {
     width: 50%;
     display: flex;
     justify-content: center;
 }
-.content-bio{
+
+.content-bio {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%
 }
+
 .content-card button {
     width: 200px;
     padding: 10px;
@@ -84,90 +87,134 @@ nav button {
     height: 100vh;
 }
 
-.abt-us {
+.latest-post {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 50px;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-}
-.abt-cnt{
-    width: 70%;
-}
-.abt-cnt h1{
-    text-align: center;
-    padding-bottom: 10px;
-}
-.abt-cards {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 80vh;
+    padding: 30px;
+    padding-bottom: 100px;
 }
 
-.abt-imgs {
-    width: 50%;
-    text-align: center;
+.latest-post hr {
     position: relative;
+    top: 20px;
 }
 
-.abt-imgs>img {
-    position: absolute;
-    object-fit: cover;
-}
-
-.img1 {
-    width: 200px;
-    height: 243px;
-    left: 180px;
-    top: 0;
-}
-
-.img2 {
-    width: 200px;
-    height: 200px;
-    left: 400px;
-    top: 43px;
-}
-
-.img3 {
-    width: 200px;
-    height: 200px;
-    left: 240px;
-    top: 255px;
-}
-
-.abt-content {
-    width: 50%;
+.post-cnt {
+    width: 70%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 20px;
-    text-align: justify;
 }
 
-.abt-content p {
+.post-heading {
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.post-heading h1 {
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    width: 200px;
+    background-color: white;
+    padding-bottom: 25px;
+}
+
+.post-img-cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: max-content;
+    gap: 80px;
+}
+
+.post-align {
     width: 50%;
+    transition: all 2s;
 }
 
-.abt-content button {
-    border: none;
-    background-color: var(--black);
-    color: var(--white);
-    outline: none;
-    padding: 10px;
-    width: 150px;
+.post-img-cards img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
     border-radius: 5px;
 }
 
+.post-img-cards .post-align:hover {
+    scale: 1.1;
+
+}
+
+.places-cards {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.place-card {
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.place-card-row img {
+    object-fit: cover;
+}
+
+.place-card-row {
+    display: flex;
+    gap: 10px;
+}
+
+.pl-row-cards:hover {
+    scale: 1.1;
+    transition: all 0.5s;
+}
+.recent-post-container{
+    width: 100%;
+    height: max-content;
+}
+.recent-post-cards-col-1{
+    width: 50%;
+}
+.rec-post-row-1{
+    display: flex;
+}
+.paris-img{
+    width: 50%;
+}
+.col-3{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.col-3-header{
+    width: 70%;
+}
+.col-3-header h1{
+    position: relative;
+    top: 12px;
+    width: 15%;
+    background-color: white;
+}
 .buisness-cnt {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     gap: 10px;
     padding: 30px;
+    width: 100%;
+}
+
+.buisness-content {
+    width: 70%;
 }
 
 .buisness-cnt h2 {
@@ -234,7 +281,7 @@ nav button {
 }
 
 .prediction-img .img-parent {
-    width: 100%;
+    width: 70%;
 }
 
 .img-parent img {
@@ -260,8 +307,15 @@ nav button {
     padding: 15px;
     background-color: black;
     color: white;
-    width: 100px;
     text-align: center;
+    border-radius: 50%;
+    height: 13vh;
+}
+
+.latest-blog button:hover {
+    background-color: grey;
+    color: black;
+    transition: all 0.5s;
 }
 
 .partner-cards {
@@ -274,13 +328,23 @@ nav button {
 
 .partner-cards .logos {
     display: flex;
-    gap: 50px;
+    gap: 60px;
 }
 
 .partner-cards a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     padding: 30px;
     color: var(--black);
+}
+.partner-cards a:hover {
+    scale: 1.1;
+    transition: all 0.5s;
+}
+.partner-img {
+    border-radius: 50%;
+    width: 50px;
 }
 
 .blog-cards {
@@ -289,7 +353,8 @@ nav button {
     gap: 20px;
     background-color: aliceblue;
 }
-.action a{
+
+.action a {
     text-decoration: none;
     color: white;
     background-color: black;
@@ -299,7 +364,8 @@ nav button {
     font-size: 12px;
     text-align: center;
 }
-.action{
+
+.action {
     background-color: var(--white);
     border-radius: 10px;
 }
@@ -324,6 +390,7 @@ nav button {
     width: 40%;
     background-color: aliceblue;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .question-card {
@@ -376,7 +443,7 @@ nav button {
     width: 50%;
     padding: 10px;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     gap: 100px;
 }
 
@@ -385,6 +452,7 @@ nav button {
     padding: 10px;
     color: var(--white);
 }
+
 .information button {
     padding: 8px;
     width: 100px;
@@ -402,30 +470,37 @@ nav button {
     background-color: black;
     color: white;
 }
-.bio-card{
+
+.bio-card {
     display: flex;
     gap: 50px;
 }
+
 .page-cnt {
     width: 40%;
     display: flex;
     flex-direction: column;
 }
-.page-cnt p{
+
+.page-cnt p {
     text-align: justify;
 }
+
 .bio .cnt {
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
 }
-.bio a{
+
+.bio a {
     text-decoration: none;
     color: grey;
 }
-.bio h4{
+
+.bio h4 {
     padding-bottom: 10px;
 }
+
 .contact-us {
     display: flex;
     flex-direction: column;
@@ -438,6 +513,7 @@ nav button {
     font-size: 20px;
     color: black;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     nav {
         display: none;
@@ -461,57 +537,68 @@ nav button {
         align-items: center;
         width: 100%;
     }
-
-    .abt-cards {
+    .content-bio{
+        align-items: center;
+    }
+    .post-img-cards {
         flex-direction: column;
-        height: max-content;
+        gap: 50px;
+    }
+
+    .latest-post {
+        padding: 20px;
+    }
+
+    .latest-post .post-cnt {
+        width: 90%;
+    }
+
+    .post-img-cards .post-align {
         width: 100%;
-        align-items: center;
     }
 
-    .abt-content {
-        align-items: center;
-    }
-
-    .abt-imgs {
+    .places-cards {
+        width: 100%;
         height: max-content;
+        padding: 30px;
+    }
+
+    .place-card-row {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .pl-row-cards{
         width: 100%;
     }
-
-    .abt-imgs .img1 {
-        position: static;
-        width: 60%;
-        height: max-content;
-        border-radius: 20px;
-        padding-bottom: 10px;
-    }
-
-    .abt-imgs .img2 {
-        position: static;
-        width: 60%;
-        height: max-content;
-        border-radius: 20px;
-        padding-bottom: 10px;
-    }
-
-    .abt-imgs .img3 {
-        position: static;
-        width: 60%;
-        height: max-content;
-        border-radius: 20px;
-        padding-bottom: 10px;
-    }
-    .abt-content{
+    .col-3{
         width: 100%;
         padding: 10px;
     }
-    .abt-content p {
-        width: 70%;
+    .col-3-header {
+        width: 100%;
+    }
+    .col-3-header h1{
+        width: fit-content;
+        padding: 10px;
+        top: 22px;
+    }
+    .buisness-cnt{
+        width: 100%;
+    }
+    .buisness-content{
+        width: 100%;
+        text-align: justify;
     }
     .prediction-img {
         width: 100%;
         height: 50%;
         object-fit: cover;
+    }
+
+    .prediction-img .img-parent {
+        width: 90%;
     }
 
     .prediction-card {
@@ -534,25 +621,31 @@ nav button {
     .blog-cards {
         flex-direction: column;
     }
-    .information{
+
+    .information {
         width: 100%;
     }
-    .info-box{
+
+    .info-box {
         flex-direction: column;
         width: auto;
-        
+
     }
-    .info-cnt{
+
+    .info-cnt {
         width: 100%;
     }
-    .bio{
+
+    .bio {
         gap: 20px;
         font-size: 10px;
     }
-    .bio-card{
+
+    .bio-card {
         gap: 20px;
     }
-    .bio .page-cnt{
+
+    .bio .page-cnt {
         font-size: 10px;
     }
 
