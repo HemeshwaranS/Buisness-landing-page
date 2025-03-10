@@ -180,14 +180,25 @@ nav button {
     width: 100%;
     height: max-content;
 }
-.recent-post-cards-col-1{
-    width: 50%;
-}
 .rec-post-row-1{
     display: flex;
 }
-.paris-img{
-    width: 50%;
+.paris-img img{
+    width:25%;
+    border-radius: 10px;
+}
+.paris-img .paris-cnt{
+    width: 25%;
+    position: relative;
+    color: white;
+    bottom: 130px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.scotland-img img{
+    width: 10%;
 }
 .col-3{
     width: 100%;
